@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Design{% endblock title %}
+
+{% block body %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.N.</th>
+        <th scope="col">Number Plate</th>
+        <th scope="col">Measured Speed</th>
+        <th scope="col">Standard Speed</th>
+      </tr>
+    </thead> 
+    <tbody>
+      {% for speed in speeds %}
+      <tr>
+          <td></td>
+          <td>{{ speed.vehicle_number }}</td>
+          <td>{{ speed.speed }} Km/h</td>
+          <td> {{speed.s_speed}} km/hr</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock body  %}

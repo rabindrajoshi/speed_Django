@@ -1,0 +1,14 @@
+<!-- vehicle_speed.html -->
+    <table>
+        <tr>
+            <th>Vehicle Number</th>
+            <th>Speed</th>
+        </tr>
+        {% for speed in speeds %}
+        <tr>
+            <td>{{ speed.vehicle_number }}</td>
+            <td>{{ speed.speed }} Km/h</td>
+        </tr>
+        {% endfor %}
+    </table>
+    

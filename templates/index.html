@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid my-2    ">
+  
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <center><h1><p>NUMBER PLATE DETECTION AND SPEED CONTROL </p></h1></center>
+      <div class="carousel-item active">
+        <img src="/static/p2.jpg" class="d-block w-100 " alt="...">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="/static/p1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/p3.jpg" class="d-block w-100" alt="...">
+      </div>
+    
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ 
+</div>
+
+{% endblock body %}
